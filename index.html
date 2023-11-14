@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <title>Fun Trivia Challenge</title>
+</head>
+<body>
+    <h1>The Best Trivia Ever</h1>
+    <div id = "timer-container">
+        Time: <span id ="time">0</span>
+    </div>
+    <h2>Try to answer the following questions within the time limit.
+        Keep in mind that incorrect answers will penalize your score/time
+         by 15 seconds. Enjoy!</h2>
+    <button id="start-btn" onclick="startQuiz()">Start Trivia</button>
+    <div id="quiz-container">
+        <p id="question"></p>
+        <div id="options"></div>
+        <div id="correctAnsr"></div> 
+    </div>
+
+    <div id="highscore-link" class="viewscores"> 
+        <a href="./highscores.html" id="view-highscore">View Highscores</a>
+    </div>
+
+    <script src="./assets/js/script.js"></script>
+    
+</body>
+</html>
